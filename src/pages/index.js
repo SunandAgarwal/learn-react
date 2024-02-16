@@ -8,12 +8,16 @@ import styles from '@/styles/Home.module.css'
 // import Bios from './qcomps/bios'
 // import Todos from './qcomps/todos'
 // import ProfileProps from './components/profile_props';
-import Gallery from './qcomps/gallery_props'
+// import Gallery from './qcomps/gallery_props'
+// import List from './qcomps/list_keys_id'
+// import Recipe from './qcomps/recipes'
+// import State from './qcomps/state'
+import Form from './qcomps/thankYouCrash'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Gallery />
+        <Form />
     </div>
   )
 }
