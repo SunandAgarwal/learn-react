@@ -12,12 +12,14 @@ import styles from '@/styles/Home.module.css'
 // import List from './qcomps/list_keys_id'
 // import Recipe from './qcomps/recipes'
 // import State from './qcomps/state'
-import Form from './qcomps/thankYouCrash'
+// import Form from './qcomps/thankYouCrash'
+// import Cart from './qcomps/shoppingCart'
+import Upd from './qcomps/updObjectsForm'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Form />
+        <Upd />
     </div>
   )
 }
