@@ -14,12 +14,14 @@ import styles from '@/styles/Home.module.css'
 // import State from './qcomps/state'
 // import Form from './qcomps/thankYouCrash'
 // import Cart from './qcomps/shoppingCart'
-import Upd from './qcomps/updObjectsForm'
+// import Upd from './qcomps/updObjectsForm'
+// import Artists from './qcomps/artistsRemoveArr'
+import Bucket from './qcomps/arrObj'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Upd />
+        <Bucket />
     </div>
   )
 }

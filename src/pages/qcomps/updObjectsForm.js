@@ -2,39 +2,37 @@ import { useState } from 'react';
 
 export default function Scoreboard() {
   const [player, setPlayer] = useState({
-    firstName: 'Ranjani',
-    lastName: 'Shettar',
-    score: 10,
+    firstName: 'John Woodrow',
+    lastName: 'Wilson',
+    likescore: 10,
   });
 
   function handlePlusClick() {
     setPlayer({
       ...player,
-      score: player.score+1,
+      likescore: player.likescore+1,
     });
   }
 
   function handleFirstNameChange(e) {
     setPlayer({
       ...player,
-      firstName: e.target.value,
-      score: 0
+      firstName: e.target.value
     });
   }
 
   function handleLastNameChange(e) {
     setPlayer({
       ...player,
-      lastName: e.target.value,
-      score: 0
+      lastName: e.target.value
     });
   }
 
   return (
     <>
       <label>
-        Score: <b>{player.score}</b>
-        {' '}
+        Like Score: <b>{player.likescore}</b>
+        {'  '}
         <button onClick={handlePlusClick}>
           +1
         </button>
